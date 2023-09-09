@@ -1,4 +1,4 @@
-package com.dasial.invitemanager.ui.home
+package com.dasial.invitemanager.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.dasial.invitemanager.databinding.FragmentAllGuestBinding
+import com.dasial.invitemanager.viewModel.AllGuestViewModel
 
 
 class AllGuestFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.dasial.invitemanager.ui.Present
+package com.dasial.invitemanager.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package com.dasial.invitemanager
+package com.dasial.invitemanager.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.dasial.invitemanager.R
 import com.dasial.invitemanager.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -26,12 +27,11 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            startActivity(Intent(applicationContext,GuestFormActivity::class.java))
+            startActivity(Intent(applicationContext, GuestFormActivity::class.java))
         }
 
         setUpNavigation()
     }
-
 
 
     override fun onSupportNavigateUp(): Boolean {
@@ -44,8 +44,7 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_all_guest, R.id.nav_presents, R.id.nav_ausents

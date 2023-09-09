@@ -13,13 +13,16 @@
         android:theme="@style/Theme.InviteManager"
         tools:targetApi="31">
         <activity
-            android:name=".GuestFormActivity"
-            android:exported="false" />
+            android:name=".view.GuestFormActivity"
+            android:exported="false"
+            android:label="Presença"/>
+
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.InviteManager.NoActionBar">
+            android:label="Home"
+            android:theme="@style/Theme.InviteManager.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
